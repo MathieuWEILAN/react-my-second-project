@@ -6,15 +6,14 @@ import Jobs from "./components/Jobs";
 function App() {
   return (
     <div>
-      <div className="header">
-        <Header title="The Job Board" />
-      </div>
-
+      <Header title="The Job Board" className="header" />
       <Jobs className="container" />
-
-      <div className="footer">
-        <Footer name="Mathieu" framework="React" where="LeReacteur" />
-      </div>
+      <Footer
+        name="Mathieu"
+        framework="React"
+        where="LeReacteur"
+        className="footer"
+      />
     </div>
   );
 }
